@@ -1,25 +1,127 @@
 <!DOCTYPE html>
-<html>
+<html lang="sv">
 <head>
-    <title>Min Skolas Webbplats</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <title>Rönninge Gymnasium</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Se till att scriptet laddas in sist eller med "defer" så att DOM laddas först -->
+  <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>Välkommen till Rönninge Gymnasium</h1>
-        <nav>
-            <a href="index.html">Hem</a>
-            <a href="program.html">Program</a>
-            <a href="kontakt.html">Kontakt</a>
-        </nav>
-    </header>
-    <main>
-        <h2>Den lilla skolan med de stora möjligheterna!</h2>
-        <p>Här hittar du information om våra program och kontaktuppgifter.</p>
-    </main>
-    <footer>
-        <p>© 2024 Rönninge Gymnasium</p>
-    </footer>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <!-- Ersätt gärna med en riktig logobild -->
+        <h1>RG</h1>
+      </div>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#hem">Hem</a></li>
+        <li><a href="#program">Våra Program</a></li>
+        <li><a href="#om">Om Skolan</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <!-- Banner/hero-avsnitt -->
+    <section class="hero" id="hem">
+      <h2>Rönninge Gymnasium</h2>
+      <p>Den lilla skolan med de stora möjligheterna!</p>
+    </section>
+
+    <!-- Programavsnitt -->
+    <section class="program" id="program">
+      <h2>Våra Program</h2>
+      <div class="program-container">
+        <!-- Högskoleförberedande program -->
+        <div class="program-col">
+          <h3>Högskoleförberedande</h3>
+          <ul>
+            <li>Ekonomiprogrammet (Juridik)</li>
+            <li>Naturvetenskapsprogrammet (Naturvetenskap / Naturvetenskap & samhälle)</li>
+            <li>Samhällsvetenskapsprogrammet (Beteendevetenskap / Samhälle & psykologi / Säkerhet & räddning)</li>
+          </ul>
+        </div>
+        <!-- Yrkesprogram -->
+        <div class="program-col">
+          <h3>Yrkesprogram</h3>
+          <ul>
+            <li>Barn- och fritidsprogrammet (Pedagogiskt och socialt arbete)</li>
+            <li>Försäljnings- och serviceprogrammet</li>
+            <li>Introduktionsprogram</li>
+            <li>Individuellt alternativ (IMA)</li>
+            <li>Programinriktat val (IMV)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Om skolan -->
+    <section class="om-skolan" id="om">
+      <h2>Det här är Rönninge Gymnasium!</h2>
+      <p>
+        Rönninge gymnasium erbjuder en personlig och stödjande atmosfär där varje elev har möjlighet att nå sin fulla potential. 
+        Med cirka 320 elever och hög lärartäthet, där över 95% av lärarna är legitimerade, skapar vi en inspirerande och varierad 
+        undervisningsmiljö som främjar både lärande och utveckling.
+      </p>
+      <p>
+        Vi erbjuder stabila stödfunktioner inom administration, elevhälsa och studie­vägledning, vilket innebär att elever snabbt kan få 
+        hjälp med både studier och mående. Varje ämneslärare avsätter två timmar i veckan för stöd i ämnet, och vi har resurser för både 
+        de som vill sikta högre och de som behöver extra hjälp.
+      </p>
+      <p>
+        På Rönninge gymnasium serveras dagligen hemlagad och näringsrik lunch som passar alla. Vårt café är en social mötesplats där elever 
+        och personal kan umgås över en fika.
+      </p>
+    </section>
+
+    <!-- Kontaktavsnitt -->
+    <section class="kontakt" id="kontakt">
+      <h2>Kontaktuppgifter</h2>
+      <div class="kontaktinfo">
+        <p><strong>Besöksadress:</strong><br>
+          Rönninge Gymnasium<br>
+          Sandbäcksvägen 10<br>
+          144 62 Rönninge
+        </p>
+        <p><strong>Postadress:</strong><br>
+          Salems kommun<br>
+          Rönninge Gymnasium<br>
+          144 80 Rönninge
+        </p>
+        <p><strong>Telefonnummer:</strong><br>
+          Expedition: +46 (0)8-532 595 03<br>
+          Fax: +46 (0)8-532 595 19<br>
+          Salems kommun: +46 (0)8-532 598 00
+        </p>
+        <p><strong>E-postadress:</strong><br>
+          <a href="mailto:gymnasiet@salem.se">gymnasiet@salem.se</a>
+        </p>
+      </div>
+      <p>
+        <strong>Fakturaadress:</strong> Salems kommun, Referens: 6710, FE133, 831 88 Östersund<br>
+        <strong>Sjukanmälan för elev:</strong> <a href="https://sms11.schoolsoft.se/salem">sms11.schoolsoft.se/salem</a><br>
+        <strong>Organisationsnummer:</strong> 21 20 00-2874<br>
+        <strong>Bankgironummer:</strong> 210-9569
+      </p>
+    </section>
+
+    <!-- CTA / Ansökan -->
+    <section class="ansokan">
+      <h2>Gör din ansökan här!</h2>
+      <p>Går du på gymnasiet och vill byta till RG? Fyll i ansökan så kontaktar vi dig.</p>
+      <a href="#" class="cta-button">Ansökningsformulär</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Rönninge Gymnasium | Sandbäcksvägen 10 | 144 62 Rönninge</p>
+  </footer>
 </body>
 </html>
-
